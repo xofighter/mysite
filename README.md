@@ -1,4 +1,8 @@
 # Django 
+- [python3-cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p01_data_structures_algorithms.html)  
+- [Django REST Framework教程](https://www.django.cn/course/show-20.html)  
+- [django-rest-framework](https://www.django-rest-framework.org/)  
+- [Django 文档](https://docs.djangoproject.com/zh-hans/2.2/)
 
 ## 创建项目
 ```
