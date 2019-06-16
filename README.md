@@ -3,6 +3,13 @@
 - [Django REST Framework教程](https://www.django.cn/course/show-20.html)  
 - [django-rest-framework](https://www.django-rest-framework.org/)  
 - [Django 文档](https://docs.djangoproject.com/zh-hans/2.2/)
+- [webpack 文档](https://www.webpackjs.com/concepts/)
+- [jinja2 文档](http://docs.jinkan.org/docs/jinja2/)
+- [Django 文档](https://code.ziqiangxuetang.com/django/django-nginx-deploy.html)
+- [Django+Bootstrap+Mysql 搭建个人博客（一）](https://www.cnblogs.com/derek1184405959/p/9060981.html)
+- [将Django项目部署到服务器](https://www.jianshu.com/p/36ef6557c910)
+
+
 
 ## 创建项目
 ```
