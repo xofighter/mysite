@@ -11,28 +11,28 @@
 
 
 
-## 创建项目
-```
+## 创建项目和应用
+```shell
 # 查看django版本号，如果你得到的是一个“No module named django”的错误提示，则表明你还未安装。
 $ python -m django --version
 # 创建一个 mysite 项目(生成的是一个目录)
 $ django-admin startproject mysite
-```
-
-## 创建投票应用
-```buildoutcfg
+# 创建应用 polls
 $ cd mysite
 $ python manage.py startapp polls
 ```
 
 ## 运行服务
-```buildoutcfg
+```shell
 # 在manage.py所在的目录下运行下面的命令：
+# 默认端口为8000
 $ python manage.py runserver
-
+# 指定端口为8080
 $ python manage.py runserver 8080
-
-$ python manage.py runserver 0:8000
+# 启动 test server
+$ python manage.py runserver 0:8080
+# 启动 dev server
+$ python manage.py runserver 0.0.0.0:8080
 ```
 
 ```buildoutcfg
@@ -50,3 +50,7 @@ $ python manage.py migrate
 # 这个变量会让 Django 根据 mysite/settings.py 文件来设置 Python 包的导入路径。
 $ python manage.py shell
 ```
+
+## django搭建的站点，通过localhost能访问，但是通过ip不能访问
+1. 使用runserver启动dev server :python manage.py runserver 0.0.0.0:8020（python manage.py runserver 是测试模式）；
+2.修改项目里的setting.py文件：ALLOWED_HOSTS = ['*']  ＃在这里请求的host添加了* 。
